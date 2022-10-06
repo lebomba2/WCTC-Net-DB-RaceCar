@@ -11,18 +11,25 @@ namespace RaceTrack.RaceTrack.Cars
         public SpaceShip()
         {
             Name = "SpaceShip";
-            TopSpeed = 200;
+            TopSpeed = 101;
         }
 
         public override void StartEngine()
         {
-            Console.WriteLine($"The {Name} struggles to start");
+            Console.WriteLine($"The {Name} struggles to engage warp engine");
         }
 
         public override void Brake()
         {
-            Console.WriteLine($"The {Name} is having a hard time stopping!");
+            Console.WriteLine($"The {Name} is having a hard time    stopping  warp engines!");
             base.Brake();
+        
+        }
+
+
+        public override void StopEngine()
+        {
+            Console.WriteLine($"The {Name} warp engine has been disengaged");
         }
     }
 }

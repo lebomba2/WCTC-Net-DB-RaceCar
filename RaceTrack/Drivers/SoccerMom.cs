@@ -19,5 +19,11 @@ namespace RaceTrack.RaceTrack.Drivers
         {
             Car.Accelerate(SkillLevel);
         }
+
+        public override void StopEngine()
+        {
+            Console.WriteLine($"The {Name} engine stopss");
+        }
+
     }
 }

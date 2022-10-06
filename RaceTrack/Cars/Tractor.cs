@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace RaceTrack.RaceTrack.Cars
 {
@@ -23,6 +24,12 @@ namespace RaceTrack.RaceTrack.Cars
         {
             Console.WriteLine($"The {Name} is having a hard time stopping!");
             base.Brake();
+        }
+
+
+        public override void StopEngine()
+        {
+            Console.WriteLine($"The {Name} engine stopss with a chug");
         }
     }
 }

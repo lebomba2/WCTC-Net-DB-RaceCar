@@ -12,12 +12,18 @@ namespace RaceTrack.RaceTrack.Drivers
         public Kang(RaceCar car) : base(car)
         {
             Name = "Alien Kang";
-            SkillLevel = 11;
+            SkillLevel = 10;
         }
 
         public override void Drive()
         {
             Car.Accelerate(SkillLevel);
         }
+        public override void StopEngine()
+        {
+            Console.WriteLine($"The {Name} warp engine stopss");
+        }
+
+
     }
 }

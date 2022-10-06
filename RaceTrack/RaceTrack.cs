@@ -56,7 +56,7 @@ namespace RaceTrack.RaceTrack
             }
             Thread.Sleep(1000);
         }
-
+        /*
         public void EndRace()
         {
             foreach (var driver in Drivers)
@@ -66,7 +66,21 @@ namespace RaceTrack.RaceTrack
             Thread.Sleep(1000);
         }
 
-        public void AnnounceWinners()
+     */
+        
+
+        public void EndRace()
+        {
+            foreach (var driver in Drivers)
+            {
+                driver.Stop();
+                driver.StopEngine();
+            }
+            Thread.Sleep(1000);
+        }
+        
+
+public void AnnounceWinners()
         {
             var position = 0;
             Console.WriteLine();
